@@ -11,3 +11,19 @@ func ToInt(s string) (i int) {
 	}
 	return
 }
+
+func Min(i1 int, i2 int) (i int) {
+	i = i1
+	if i2 < i1 {
+		i = i2
+	}
+	return
+}
+
+func Max(i1 int, i2 int) (i int) {
+	i = i1
+	if i2 > i1 {
+		i = i2
+	}
+	return
+}

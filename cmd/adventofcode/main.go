@@ -21,6 +21,9 @@ func main() {
 
 	solve(aoc2021.Day4_1, "aoc2021/day4")
 	solve(aoc2021.Day4_2, "aoc2021/day4")
+
+	solve(aoc2021.Day5_1, "aoc2021/day5")
+	solve(aoc2021.Day5_2, "aoc2021/day5")
 }
 
 type DayFunc func(*bufio.Scanner) int

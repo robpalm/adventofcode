@@ -1,6 +1,6 @@
 # Advent of Code
 
-My first fumble adventure in coding Go!
+My first fumbling steps in coding Go!
 
 After soon 20 years of mostly C#, it's about time to try out a new language.
 
