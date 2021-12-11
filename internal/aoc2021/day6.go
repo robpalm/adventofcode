@@ -2,7 +2,6 @@ package aoc2021
 
 import (
 	"bufio"
-	"fmt"
 	"robpalm/adventofcode/internal/utils"
 	"strings"
 )
@@ -20,26 +19,31 @@ func Day6_2(scanner *bufio.Scanner) int {
 }
 
 func Day6(scanner *bufio.Scanner, days int) int {
-	var fishes []int
+	currentFishes := make(map[int]int)
 
 	for scanner.Scan() {
 		parts := strings.Split(scanner.Text(), ",")
 		for _, s := range parts {
-			fishes = append(fishes, utils.ToInt(s))
+			currentFishes[utils.ToInt(s)]++
 		}
-		fmt.Println(fishes)
 	}
 
 	for i := 0; i < days; i++ {
-		var fishCount = len(fishes)
-		for i := 0; i < fishCount; i++ {
-			if fishes[i] == 0 {
-				fishes[i] = 6
-				fishes = append(fishes, 8)
+		nextGenFishes := make(map[int]int)
+		for timer, fishes := range currentFishes {
+			if timer == 0 {
+				nextGenFishes[6] += fishes
+				nextGenFishes[8] += fishes
 			} else {
-				fishes[i]--
+				nextGenFishes[timer-1] += fishes
 			}
 		}
+		currentFishes = nextGenFishes
 	}
-	return len(fishes)
+
+	var fishesTotal int
+	for _, fishes := range currentFishes {
+		fishesTotal += fishes
+	}
+	return fishesTotal
 }
