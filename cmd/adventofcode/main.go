@@ -10,20 +10,23 @@ import (
 )
 
 func main() {
-	solve(aoc2021.Day1_1, "aoc2021/day1")
-	solve(aoc2021.Day1_2, "aoc2021/day1")
+	// solve(aoc2021.Day1_1, "aoc2021/day1")
+	// solve(aoc2021.Day1_2, "aoc2021/day1")
 
-	solve(aoc2021.Day2_1, "aoc2021/day2")
-	solve(aoc2021.Day2_2, "aoc2021/day2")
+	// solve(aoc2021.Day2_1, "aoc2021/day2")
+	// solve(aoc2021.Day2_2, "aoc2021/day2")
 
-	solve(aoc2021.Day3_1, "aoc2021/day3")
-	solve(aoc2021.Day3_2, "aoc2021/day3")
+	// solve(aoc2021.Day3_1, "aoc2021/day3")
+	// solve(aoc2021.Day3_2, "aoc2021/day3")
 
-	solve(aoc2021.Day4_1, "aoc2021/day4")
-	solve(aoc2021.Day4_2, "aoc2021/day4")
+	// solve(aoc2021.Day4_1, "aoc2021/day4")
+	// solve(aoc2021.Day4_2, "aoc2021/day4")
 
-	solve(aoc2021.Day5_1, "aoc2021/day5")
-	solve(aoc2021.Day5_2, "aoc2021/day5")
+	// solve(aoc2021.Day5_1, "aoc2021/day5")
+	// solve(aoc2021.Day5_2, "aoc2021/day5")
+
+	solve(aoc2021.Day6_1, "aoc2021/day6")
+	solve(aoc2021.Day6_2, "aoc2021/day6")
 }
 
 type DayFunc func(*bufio.Scanner) int
