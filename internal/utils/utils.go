@@ -23,8 +23,12 @@ func Solve(dayFunc DayFunc, input string) {
 }
 
 func ToInt(s string) (i int) {
+	if len(s) == 0 {
+		return
+	}
 	i, err := strconv.Atoi(s)
 	if err != nil {
+		fmt.Println(err)
 		panic(err)
 	}
 	return
