@@ -25,6 +25,9 @@ func BenchmarkDay6(b *testing.B) {
 	utils.Solve(aoc2021.Day6_1, "aoc2021/day6")
 	utils.Solve(aoc2021.Day6_2, "aoc2021/day6")
 
-	utils.Solve(aoc2021.Day7_1, "aoc2021/day6")
-	utils.Solve(aoc2021.Day7_2, "aoc2021/day6")
+	utils.Solve(aoc2021.Day7_1, "aoc2021/day7")
+	utils.Solve(aoc2021.Day7_2, "aoc2021/day7")
+
+	utils.Solve(aoc2021.Day8_1, "aoc2021/day8")
+	utils.Solve(aoc2021.Day8_2, "aoc2021/day8")
 }

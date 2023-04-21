@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"fmt"
+	"math"
 	"os"
 	"reflect"
 	"runtime"
@@ -34,10 +35,12 @@ func ToInt(s string) (i int) {
 	return
 }
 
-func Min(i1 int, i2 int) (i int) {
-	i = i1
-	if i2 < i1 {
-		i = i2
+func Min(nums ...int) (min int) {
+	min = math.MaxInt
+	for _, num := range nums {
+		if num < min {
+			min = num
+		}
 	}
 	return
 }

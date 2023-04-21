@@ -29,4 +29,7 @@ func main() {
 
 	utils.Solve(aoc2021.Day8_1, "aoc2021/day8")
 	utils.Solve(aoc2021.Day8_2, "aoc2021/day8")
+
+	utils.Solve(aoc2021.Day9_1, "aoc2021/day9")
+	utils.Solve(aoc2021.Day9_2, "aoc2021/day9")
 }
